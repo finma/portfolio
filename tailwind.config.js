@@ -35,7 +35,8 @@ module.exports = {
           900: withOpacity('--tw-clr-primary-900'),
         },
         dark: '#020B17',
-        'dark-blue': '#051a33',
+        'dark-blue': '#051A33',
+        'red-custom': '#FF4D5A',
       },
       keyframes: {
         flicker: {
