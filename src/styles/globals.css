@@ -108,6 +108,7 @@
 
 html {
   scroll-behavior: smooth;
+  caret-color: transparent;
 }
 
 body {
