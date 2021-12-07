@@ -18,7 +18,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...fontFamily.sans],
+        primary: ['"Spartan"', 'Inter', ...fontFamily.sans],
       },
       colors: {
         primary: {
@@ -34,7 +34,8 @@ module.exports = {
           800: withOpacity('--tw-clr-primary-800'),
           900: withOpacity('--tw-clr-primary-900'),
         },
-        dark: '#222222',
+        dark: '#020B17',
+        'dark-blue': '#051a33',
       },
       keyframes: {
         flicker: {

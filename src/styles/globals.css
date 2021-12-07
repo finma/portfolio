@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,16 +7,16 @@
 :root {
   /* #region  /**=========== Primary Color =========== */
   /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
-  --tw-clr-primary-50: 240, 249, 255;
-  --tw-clr-primary-100: 224, 242, 254;
-  --tw-clr-primary-200: 186, 230, 253;
-  --tw-clr-primary-300: 125, 211, 252;
-  --tw-clr-primary-400: 56, 189, 248;
-  --tw-clr-primary-500: 14, 165, 233;
-  --tw-clr-primary-600: 2, 132, 199;
-  --tw-clr-primary-700: 3, 105, 161;
-  --tw-clr-primary-800: 7, 89, 133;
-  --tw-clr-primary-900: 12, 74, 110;
+  --tw-clr-primary-50: 255, 235, 240;
+  --tw-clr-primary-100: 255, 206, 214;
+  --tw-clr-primary-200: 248, 154, 160;
+  --tw-clr-primary-300: 242, 114, 123;
+  --tw-clr-primary-400: 255, 77, 89;
+  --tw-clr-primary-500: 255, 53, 62;
+  --tw-clr-primary-600: 247, 43, 62;
+  --tw-clr-primary-700: 229, 31, 55;
+  --tw-clr-primary-800: 216, 19, 48;
+  --tw-clr-primary-900: 201, 0, 35;
   --clr-primary-50: rgb(var(--tw-clr-primary-50)); /* #f0f9ff */
   --clr-primary-100: rgb(var(--tw-clr-primary-100)); /* #e0f2fe */
   --clr-primary-200: rgb(var(--tw-clr-primary-200)); /* #bae6fd */
@@ -102,4 +104,31 @@
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.image-container {
+  position: relative !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
 }

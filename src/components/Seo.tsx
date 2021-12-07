@@ -5,10 +5,9 @@ import { openGraph } from '@/lib/helper';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+  title: 'FINMA',
+  siteName: 'FINMA',
+  description: 'Web Portfolio Firman Maulana, FINMA',
   url: 'https://tsnext-tw.thcl.dev',
   image: 'https://theodorusclarence.com/favicon/large-og.jpg',
   type: 'website',
