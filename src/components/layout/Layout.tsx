@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className='from-dark-blue to-dark flex relative min-w-full min-h-screen bg-gradient-to-b outline-none'>
         <Header />
         <Sidebar />
-        <main className='selection:bg-red-custom z-[2] w-full min-h-screen lg:pl-[120px]'>
+        <main className='selection:bg-red-custom z-[2] w-full h-full min-h-screen lg:pl-[120px]'>
           {children}
         </main>
         <Particle />
