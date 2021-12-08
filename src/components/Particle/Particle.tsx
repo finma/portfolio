@@ -1,57 +1,121 @@
-import ParticleField from 'react-particles-webgl';
+import Particles from 'react-tsparticles';
 
 const Particle = () => {
   return (
     <div className='z-[1] absolute w-full h-full'>
-      <ParticleField config={config} />
+      <Particles
+        options={{
+          particles: {
+            number: {
+              value: 300,
+              density: {
+                enable: true,
+                value_area: 789.1476416322727,
+              },
+            },
+            color: {
+              value: '#ffffff',
+            },
+            shape: {
+              type: 'star',
+              stroke: {
+                width: 0,
+                color: '#ffffff',
+              },
+              polygon: {
+                nb_sides: 5,
+              },
+              image: {
+                src: 'img/github.svg',
+                width: 100,
+                height: 100,
+              },
+            },
+            opacity: {
+              value: 1,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 0.2,
+                opacity_min: 0,
+                sync: false,
+              },
+            },
+            size: {
+              value: 1,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 2,
+                size_min: 0,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable: false,
+              distance: 150,
+              color: '#ffffff',
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 0.2,
+              direction: 'none',
+              random: true,
+              straight: false,
+              out_mode: 'out',
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: {
+              onhover: {
+                enable: true,
+                mode: 'bubble',
+              },
+              onclick: {
+                enable: true,
+                mode: 'push',
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 400,
+                line_linked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                distance: 83.91608391608392,
+                size: 1,
+                duration: 3,
+                opacity: 1,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+              push: {
+                particles_nb: 4,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+        }}
+      />
     </div>
   );
-};
-
-const config = {
-  showCube: false,
-  dimension: '3D',
-  velocity: 0.1,
-  boundaryType: 'bounce',
-  antialias: false,
-  direction: {
-    xMin: -0.6,
-    xMax: 0.3,
-    yMin: -1,
-    yMax: -0.6,
-    zMin: -0.6,
-    zMax: 0.3,
-  },
-  lines: {
-    colorMode: 'rainbow',
-    color: '#351CCB',
-    transparency: 0.9,
-    limitConnections: true,
-    maxConnections: 20,
-    minDistance: 138,
-    visible: false,
-  },
-  particles: {
-    colorMode: 'solid',
-    color: '#ffffff',
-    transparency: 0.9,
-    shape: 'circle',
-    boundingBox: 'canvas',
-    count: 500,
-    minSize: 1,
-    maxSize: 20,
-    visible: true,
-  },
-  cameraControls: {
-    enabled: false,
-    enableDamping: false,
-    dampingFactor: 0.2,
-    enableZoom: false,
-    autoRotate: false,
-    autoRotateSpeed: 0.3,
-    resetCameraFlag: true,
-  },
-  limitConnections: true,
 };
 
 export default Particle;
