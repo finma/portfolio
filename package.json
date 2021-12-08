@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.4",
+    "TagCloud": "^2.2.0",
     "aos": "^2.3.4",
     "clsx": "^1.1.1",
     "framer-motion": "^5.4.1",

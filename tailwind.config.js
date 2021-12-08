@@ -61,6 +61,9 @@ module.exports = {
       animation: {
         flicker: 'flicker 3s linear infinite',
       },
+      cursor: {
+        link: 'url(/images/nes-tab.png)',
+      },
     },
   },
   variants: {

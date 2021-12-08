@@ -1283,6 +1283,11 @@ JSONStream@^1.0.4:
     jsonparse "^1.2.0"
     through ">=2.2.7 <3"
 
+TagCloud@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/TagCloud/-/TagCloud-2.2.0.tgz#fb96d30bfb8628fadeb298a3ca87ab447468fcf1"
+  integrity sha512-O2iizjUAWi58/EVn7ut5r16EelUtf42P9tta/q4tpE6r+Fs+13+UxdSNbxj0kElq3FOTWVlm2FFWJuLE9xY5mA==
+
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.5"
   resolved "https://registry.npmjs.org/abab/-/abab-2.0.5.tgz"
