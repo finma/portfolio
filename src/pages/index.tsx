@@ -8,7 +8,9 @@ export default function HomePage() {
     <Layout>
       <Home />
       <div className='z-[5] relative w-full h-screen min-h-screen'>
-        <h1 className='text-white'>section2</h1>
+        <div data-aos='fade-right'>
+          <h1 className='text-white'>section2</h1>
+        </div>
       </div>
     </Layout>
   );
