@@ -134,3 +134,7 @@ body {
   position: relative !important;
   height: unset !important;
 }
+
+.nav-menu.active-menu {
+  width: 48px;
+}
