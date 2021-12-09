@@ -1,4 +1,5 @@
-import * as React from 'react';
+import ReactFullpage from '@fullpage/react-fullpage';
+import $ from 'jquery';
 
 import Layout from '@/components/layout/Layout';
 import { Home } from '@/components/sections';
@@ -7,13 +8,49 @@ import { About } from '@/components/sections';
 export default function HomePage() {
   return (
     <Layout>
-      <Home />
-      <About />
-      {/* <div className='z-[5] relative w-full h-screen min-h-screen'>
-        <div data-aos='fade-right'>
-          <h1 className='text-white'>section2</h1>
-        </div>
-      </div> */}
+      <ReactFullpage
+        //fullpage options
+        easingcss3='cubic-bezier(0.645, 0.045, 0.355, 1)'
+        scrollingSpeed={1e3}
+        anchors={['home', 'about', 'portfolio', 'contact']}
+        navigation={false}
+        // navigationPosition='left'
+        animateAnchor={false}
+        render={() => {
+          return (
+            <ReactFullpage.Wrapper>
+              <Home />
+              <About />
+              <div data-anchor='portfolio' className='section'>
+                <h1>Portfolio</h1>
+              </div>
+              <div data-anchor='contact' className='section'>
+                <h1>Contact</h1>
+              </div>
+            </ReactFullpage.Wrapper>
+          );
+        }}
+        onLeave={function () {
+          $('.section [data-aos]').each(function () {
+            $(this).removeClass('aos-animate');
+          });
+        }}
+        onSlideLeave={function () {
+          $('.slide [data-aos]').each(function () {
+            $(this).removeClass('aos-animate');
+          });
+        }}
+        afterSlideLoad={function () {
+          $('.slide.active [data-aos]').each(function () {
+            $(this).addClass('aos-animate');
+          });
+        }}
+        afterLoad={function () {
+          $('.section.active [data-aos]').each(function () {
+            $(this).addClass('aos-animate');
+          });
+        }}
+      />
     </Layout>
   );
 }

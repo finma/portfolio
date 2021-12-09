@@ -19,7 +19,7 @@ export const Moon = () => {
   }, []);
 
   return (
-    <div className='flex overflow-hidden absolute w-full h-screen lg:justify-end lg:items-center'>
+    <div className='flex overflow-hidden w-full h-screen lg:justify-end lg:items-center'>
       <div
         className='flex relative justify-center items-center w-full h-1/2 lg:w-1/2 lg:h-screen'
         style={{ transform: `translate(${offsetX}px, ${offsetY}px)` }}
@@ -28,7 +28,7 @@ export const Moon = () => {
           data-aos='fade-left'
           data-aos-easing='anticipate'
           data-aos-duration='1000'
-          className='image-container mt-10 w-full h-full'
+          className='image-container w-full h-full'
         >
           <Image
             src='/images/Moon.webp'
@@ -38,7 +38,7 @@ export const Moon = () => {
             className='image'
           />
         </div>
-        <div className='grid absolute top-0 grid-cols-2 mt-10 w-full h-full'>
+        <div className='grid absolute top-0 grid-cols-2 w-full h-full'>
           <div
             data-aos='fade-left'
             data-aos-easing='anticipate'

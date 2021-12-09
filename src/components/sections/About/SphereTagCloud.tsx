@@ -27,9 +27,9 @@ export const SphereTagCloud = () => {
     const options = {
       radius: screen.width > 500 ? 300 : 130,
       maxSpeed: 'fast',
-      initSpeed: 'normal',
+      initSpeed: 'fast',
       direction: 100,
-      keep: true,
+      keep: false,
       useContainerInlineStyles: true,
     };
 
@@ -46,11 +46,10 @@ export const SphereTagCloud = () => {
   return (
     <div
       id='tagcloud'
-      data-aos='fade-zoom-in'
-      data-aos-easing='anticipate'
+      data-aos='fade-left'
+      data-aos-easing='easeInOutCubic'
       data-aos-duration='1000'
-      data-aos-delay='200'
-      className='flex justify-end items-center w-full h-full text-white lg:pr-8'
+      className='flex justify-center items-start pt-20 w-full h-full font-medium text-white lg:justify-end lg:items-center lg:pr-8 lg:mt-0'
     >
       {/* <TagCloud /> */}
     </div>

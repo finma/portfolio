@@ -7,7 +7,7 @@ const Particle = () => {
         options={{
           particles: {
             number: {
-              value: 10,
+              value: 50,
               density: {
                 enable: true,
                 value_area: 789.1476416322727,

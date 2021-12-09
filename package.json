@@ -20,11 +20,13 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.19",
     "@tailwindcss/forms": "^0.3.4",
     "TagCloud": "^2.2.0",
     "aos": "^2.3.4",
     "clsx": "^1.1.1",
     "framer-motion": "^5.4.1",
+    "jquery": "^3.6.0",
     "next": "^12.0.4",
     "react": "^17.0.2",
     "react-animated-burgers": "^1.2.8",
@@ -39,6 +41,7 @@
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^12.1.2",
     "@types/aos": "^3.0.4",
+    "@types/jquery": "^3.5.10",
     "@types/react": "^17.0.37",
     "@types/tailwindcss": "^2.2.4",
     "@typescript-eslint/eslint-plugin": "^4.33.0",

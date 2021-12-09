@@ -3,9 +3,11 @@ import { Moon } from './Moon';
 
 export const Home = () => {
   return (
-    <div className='mx-h-screen relative w-full h-screen min-h-screen'>
-      <Moon />
-      <Heading />
+    <div data-anchor='home' className='section w-full h-screen'>
+      <div className='flex justify-end'>
+        <Moon />
+        <Heading />
+      </div>
     </div>
   );
 };
