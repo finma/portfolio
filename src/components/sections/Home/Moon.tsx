@@ -26,7 +26,7 @@ export const Moon = () => {
       >
         <div
           data-aos='fade-left'
-          data-aos-easing='anticipate'
+          data-aos-easing='easeInOutCubic'
           data-aos-duration='1000'
           className='image-container w-full h-full'
         >
@@ -41,7 +41,7 @@ export const Moon = () => {
         <div className='grid absolute top-0 grid-cols-2 w-full h-full'>
           <div
             data-aos='fade-left'
-            data-aos-easing='anticipate'
+            data-aos-easing='easeInOutCubic'
             data-aos-duration='1000'
             data-aos-delay='150'
             className='relative w-full h-full'
@@ -63,7 +63,7 @@ export const Moon = () => {
           </div>
           <div
             data-aos='fade-left'
-            data-aos-easing='anticipate'
+            data-aos-easing='easeInOutCubic'
             data-aos-duration='1000'
             data-aos-delay='300'
             className='overflow-hidden relative w-full h-full'
@@ -85,7 +85,7 @@ export const Moon = () => {
           </div>
           <div
             data-aos='fade-left'
-            data-aos-easing='anticipate'
+            data-aos-easing='easeInOutCubic'
             data-aos-duration='1000'
             data-aos-delay='450'
             className='relative w-full h-full'
@@ -107,7 +107,7 @@ export const Moon = () => {
           </div>
           <div
             data-aos='fade-left'
-            data-aos-easing='anticipate'
+            data-aos-easing='easeInOutCubic'
             data-aos-duration='1000'
             data-aos-delay='600'
             className='overflow-hidden relative w-full h-full'

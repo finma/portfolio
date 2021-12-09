@@ -2,7 +2,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import $ from 'jquery';
 
 import Layout from '@/components/layout/Layout';
-import { Home } from '@/components/sections';
+import { Home, Portfolio } from '@/components/sections';
 import { About } from '@/components/sections';
 
 export default function HomePage() {
@@ -19,7 +19,7 @@ export default function HomePage() {
               <Home />
               <About />
               <div data-anchor='portfolio' className='section'>
-                <h1>Portfolio</h1>
+                <Portfolio />
               </div>
               <div data-anchor='contact' className='section'>
                 <h1>Contact</h1>

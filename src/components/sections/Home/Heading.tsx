@@ -5,7 +5,7 @@ export const Heading = () => {
         <div className='flex flex-col space-y-4 lg:space-y-8'>
           <div
             data-aos='fade-right'
-            data-aos-easing='anticipate'
+            data-aos-easing='easeInOutCubic'
             data-aos-duration='1000'
             className='space-y-1 w-full lg:space-y-5'
           >
@@ -18,7 +18,7 @@ export const Heading = () => {
           </div>
           <div
             data-aos='fade-right'
-            data-aos-easing='anticipate'
+            data-aos-easing='easeInOutCubic'
             data-aos-duration='1000'
             data-aos-delay='150'
             className='space-y-2 w-full md:space-y-4'
@@ -28,7 +28,7 @@ export const Heading = () => {
           </div>
           <div
             data-aos='fade-right'
-            data-aos-easing='anticipate'
+            data-aos-easing='easeInOutCubic'
             data-aos-duration='1000'
             data-aos-delay='300'
             className='w-full'
