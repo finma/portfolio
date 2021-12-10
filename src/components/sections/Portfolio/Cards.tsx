@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 
 interface CardProps {
@@ -17,13 +17,12 @@ const Card = ({ image, href, delay }: CardProps) => {
       className='w-full h-full'
     >
       <Link href={href}>
-        <a>
+        <a target='_blank'>
           <div className='overflow-hidden relative w-full h-full'>
-            <Image
+            <img
               src={image}
-              layout='fill'
               alt=''
-              className='image transition duration-200 transform hover:scale-110'
+              className='object-cover w-full h-full filter brightness-75 transition duration-200 transform hover:brightness-100 hover:scale-110'
             />
           </div>
         </a>
@@ -34,49 +33,67 @@ const Card = ({ image, href, delay }: CardProps) => {
 
 export const Cards = () => {
   return (
-    <div className='grid grid-cols-3 grid-rows-3 pt-20 pb-10 w-1/2'>
-      {items.map(({ image, href }, i) => (
-        <Card key={i} image={image} href={href} delay={i} />
-      ))}
-    </div>
+    <>
+      <div className='hidden grid-cols-3 grid-rows-3 pt-20 pb-10 w-1/2 lg:grid'>
+        {items.map(({ image, href }, i) => (
+          <Card key={i} image={image} href={href} delay={i} />
+        ))}
+      </div>
+      <div className='grid grid-cols-2 grid-rows-2 pt-20 w-full lg:hidden'>
+        {items
+          .map(({ image, href }, i) => (
+            <Card key={i} image={image} href={href} delay={i} />
+          ))
+          .slice(0, 4)}
+      </div>
+    </>
   );
 };
 
 const items = [
   {
-    image: '/images/profile.webp',
-    href: 'localhost:3000',
+    title: 'Cryptoverse',
+    image: '/images/Cryptoverse.webp',
+    href: 'https://cryptoversee.vercel.app/',
   },
   {
-    image: '/images/profile.webp',
-    href: 'localhost:3000',
+    title: 'Memories',
+    image: '/images/Memories.webp',
+    href: 'https://finma-memories-app.netlify.app/',
   },
   {
-    image: '/images/profile.webp',
-    href: 'localhost:3000',
+    title: 'GameStore',
+    image: '/images/GameStore.png',
+    href: 'https://gamestoreku.vercel.app/',
   },
   {
-    image: '/images/profile.webp',
-    href: 'localhost:3000',
+    title: 'ReactAdmin',
+    image: '/images/ReactAdmin.webp',
+    href: 'https://finmaadmin.netlify.app/',
   },
   {
-    image: '/images/profile.webp',
-    href: 'localhost:3000',
+    title: 'RandQuote',
+    image: '/images/Randquote.webp',
+    href: 'https://randquote.vercel.app/',
   },
   {
-    image: '/images/profile.webp',
-    href: 'localhost:3000',
+    title: 'QuranApp',
+    image: '/images/QuranApp.webp',
+    href: 'https://webquran.vercel.app/',
   },
   {
-    image: '/images/profile.webp',
-    href: 'localhost:3000',
+    title: 'PizzaJoint',
+    image: '/images/PizzaJoint.webp',
+    href: 'https://pizzajointapp.vercel.app/',
   },
   {
-    image: '/images/profile.webp',
-    href: 'localhost:3000',
+    title: 'Calculator',
+    image: '/images/Calculator.webp',
+    href: 'https://kalkulatorku.vercel.app/',
   },
   {
-    image: '/images/profile.webp',
-    href: 'localhost:3000',
+    title: 'ChatRoom',
+    image: '/images/ChatRoom.webp',
+    href: 'https://metachatroom.netlify.app/',
   },
 ];
