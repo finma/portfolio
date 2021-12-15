@@ -6,7 +6,7 @@ export const Form = () => {
       data-aos='fade'
       data-aos-easing='easeInOutCubic'
       data-aos-duration='1000'
-      className='flex justify-center items-center px-4 w-full lg:p-0 lg:w-1/2'
+      className='flex justify-center items-start px-4 w-full md:p-0 lg:items-center lg:w-1/2'
     >
       <form className='w-full max-w-lg'>
         <div className='flex flex-wrap -mx-3 mb-2 lg:mb-6'>
@@ -69,7 +69,7 @@ export const Form = () => {
             <textarea
               className='border-red-custom block px-4 py-3 mb-3 w-full leading-tight text-white bg-transparent rounded border-2 appearance-none focus:bg-transparent focus:outline-none'
               id='message'
-              rows={5}
+              rows={4}
               placeholder='Message'
               required
             ></textarea>

@@ -12,6 +12,7 @@ export default function HomePage() {
         scrollingSpeed={1e3}
         anchors={['home', 'about', 'portfolio', 'contact']}
         animateAnchor={false}
+        responsiveWidth={800}
         render={() => {
           return (
             <ReactFullpage.Wrapper>

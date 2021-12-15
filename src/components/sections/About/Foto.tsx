@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from 'react';
 
 export const Foto = () => {
@@ -26,13 +26,12 @@ export const Foto = () => {
     >
       <div
         style={{ transform: `translate(${offsetX}px, ${offsetY}px)` }}
-        className='h-[300px] image-container w-[300px] shadow-xl lg:h-[450px] lg:w-[450px]'
+        className='h-[300px] image-container w-[300px] shadow-xl md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px]'
       >
-        <Image
+        <img
           src='/images/profile.webp'
           alt=''
-          layout='fill'
-          className='rounded-md'
+          className='w-full h-full rounded-md'
         />
       </div>
     </div>

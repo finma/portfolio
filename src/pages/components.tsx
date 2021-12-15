@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import * as React from 'react';
 
 import Button from '@/components/buttons/Button';
-import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import CustomLink from '@/components/links/CustomLink';
@@ -23,7 +22,7 @@ export default function ComponentsPage() {
   const textColor = mode === 'dark' ? 'text-gray-300' : 'text-gray-600';
 
   return (
-    <Layout>
+    <>
       <Seo
         templateTitle='Components'
         description='Pre-built components with awesome default'
@@ -294,7 +293,7 @@ export default function ComponentsPage() {
           </div>
         </section>
       </main>
-    </Layout>
+    </>
   );
 }
 

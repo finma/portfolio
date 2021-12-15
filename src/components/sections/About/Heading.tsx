@@ -3,7 +3,7 @@ import ButtonLink from '@/components/links/ButtonLink';
 export const Heading = () => {
   return (
     <div className='z-[9] overflow-hidden absolute w-full h-screen'>
-      <div className='flex justify-center items-end pb-24 w-full h-full lg:justify-start lg:items-center lg:pb-0'>
+      <div className='flex justify-center items-end w-full h-full lg:justify-start lg:items-center lg:pb-0'>
         <div className='flex flex-col space-y-4 lg:space-y-8'>
           <div
             data-aos='fade-right'
@@ -50,7 +50,7 @@ export const Heading = () => {
             data-aos-delay='300'
             className='w-full'
           >
-            <ButtonLink variant='primary' href='/components'>
+            <ButtonLink variant='primary' href='/about'>
               Show me more
             </ButtonLink>
           </div>

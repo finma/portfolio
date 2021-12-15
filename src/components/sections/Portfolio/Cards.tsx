@@ -44,7 +44,7 @@ export const Cards = () => {
           .map(({ image, href }, i) => (
             <Card key={i} image={image} href={href} delay={i} />
           ))
-          .slice(0, 4)}
+          .slice(0, 6)}
       </div>
     </>
   );

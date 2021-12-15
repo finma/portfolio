@@ -2,7 +2,7 @@ import ButtonLink from '@/components/links/ButtonLink';
 
 export const Heading = () => {
   return (
-    <div className='flex justify-center items-end pb-24 w-full h-full lg:justify-start lg:items-center lg:pb-0 lg:w-1/2'>
+    <div className='flex justify-start items-center px-4 w-full h-full lg:items-center lg:pb-0 lg:w-1/2'>
       <div className='flex flex-col space-y-4 lg:space-y-8'>
         <div
           data-aos='fade-right'
@@ -42,7 +42,7 @@ export const Heading = () => {
           data-aos-delay='300'
           className='w-full'
         >
-          <ButtonLink variant='primary' href='/components'>
+          <ButtonLink variant='primary' href='/portfolio'>
             Show me more
           </ButtonLink>
         </div>
