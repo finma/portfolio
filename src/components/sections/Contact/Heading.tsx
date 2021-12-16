@@ -1,6 +1,6 @@
 export const Heading = () => {
   return (
-    <div className='h-max flex justify-start px-4 mb-4 w-full lg:justify-start lg:items-center lg:pb-0 lg:w-1/2 lg:h-full'>
+    <div className='h-max flex justify-start px-8 mb-4 w-full lg:justify-start lg:items-center lg:pb-0 lg:w-1/2 lg:h-full'>
       <div className='flex flex-col space-y-4 lg:space-y-8'>
         <div
           data-aos='fade-right'
@@ -29,7 +29,7 @@ export const Heading = () => {
           data-aos-delay='300'
           className='w-full'
         >
-          <h2 className='text-sm font-medium tracking-wider text-white md:text-2xl md:leading-relaxed'>
+          <h2 className='hidden text-sm font-medium tracking-wider text-white md:text-2xl md:leading-relaxed lg:block'>
             Get in touch
           </h2>
         </div>

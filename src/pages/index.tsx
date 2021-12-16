@@ -8,6 +8,7 @@ export default function HomePage() {
   return (
     <Layout>
       <ReactFullpage
+        licenseKey='YOUR_KEY_HERE'
         easingcss3='cubic-bezier(0.645, 0.045, 0.355, 1)'
         scrollingSpeed={1e3}
         anchors={['home', 'about', 'portfolio', 'contact']}

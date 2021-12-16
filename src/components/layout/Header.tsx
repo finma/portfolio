@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { HamburgerSpin } from 'react-animated-burgers';
@@ -22,21 +23,36 @@ export default function Header() {
               </p>
             </a>
           </Link>
-          <div className='hidden lg:block'>
-            <HamburgerSpin
-              isActive={isOpen}
-              toggleButton={toggleButton}
-              barColor='white'
-              buttonWidth={55}
-            />
-          </div>
-          <div className='block lg:hidden'>
-            <HamburgerSpin
-              isActive={isOpen}
-              toggleButton={toggleButton}
-              barColor='white'
-              buttonWidth={40}
-            />
+          <div className='flex items-center space-x-4 md:space-x-8'>
+            <Link href='https://github.com/finma'>
+              <a
+                target='_blank'
+                className='cursor-link image-container w-6 h-6 md:w-8 md:h-8'
+              >
+                <Image
+                  src='/icons/Github-Mark-Light-32px.png'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </a>
+            </Link>
+            <div className='hidden lg:block'>
+              <HamburgerSpin
+                isActive={isOpen}
+                toggleButton={toggleButton}
+                barColor='white'
+                buttonWidth={55}
+              />
+            </div>
+            <div className='block lg:hidden'>
+              <HamburgerSpin
+                isActive={isOpen}
+                toggleButton={toggleButton}
+                barColor='white'
+                buttonWidth={40}
+              />
+            </div>
           </div>
         </div>
       </header>

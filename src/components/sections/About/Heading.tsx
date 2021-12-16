@@ -2,7 +2,7 @@ import ButtonLink from '@/components/links/ButtonLink';
 
 export const Heading = () => {
   return (
-    <div className='z-[9] overflow-hidden absolute w-full h-screen'>
+    <div className='z-[9] overflow-hidden absolute pb-24 w-full h-screen lg:pb-0'>
       <div className='flex justify-center items-end w-full h-full lg:justify-start lg:items-center lg:pb-0'>
         <div className='flex flex-col space-y-4 lg:space-y-8'>
           <div

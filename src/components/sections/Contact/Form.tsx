@@ -6,7 +6,7 @@ export const Form = () => {
       data-aos='fade'
       data-aos-easing='easeInOutCubic'
       data-aos-duration='1000'
-      className='flex justify-center items-start px-4 w-full md:p-0 lg:items-center lg:w-1/2'
+      className='flex justify-center items-start px-8 w-full md:p-0 lg:items-center lg:w-1/2'
     >
       <form className='w-full max-w-lg'>
         <div className='flex flex-wrap -mx-3 mb-2 lg:mb-6'>

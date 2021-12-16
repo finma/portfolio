@@ -9,7 +9,9 @@ import '@/styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      disable: 'mobile',
+    });
   });
 
   return <Component {...pageProps} />;
