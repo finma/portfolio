@@ -15,11 +15,11 @@ const Sidebar = () => {
   return (
     <aside className='w-[120px] z-[1] hidden fixed justify-center items-center h-screen bg-transparent outline-none lg:flex'>
       <nav className='flex flex-col space-y-6 w-12'>
-        {items.map(({ href, section }) => {
+        {items.map(({ href }) => {
           return (
             <Link key={href} href={href}>
               <a className='inline-block p-2'>
-                {router.asPath === section ? (
+                {router.asPath === href ? (
                   <motion.div
                     variants={variant}
                     initial='initial'
