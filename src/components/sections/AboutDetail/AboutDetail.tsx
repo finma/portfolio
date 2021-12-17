@@ -7,7 +7,7 @@ import ArrowLink from '@/components/links/ArrowLink';
 export const AboutDetail = () => {
   return (
     <div className='container relative m-auto w-full h-full'>
-      <div className='sticky top-20'>
+      <div className='hidden sticky top-20 z-50 lg:block'>
         <ArrowLink direction='left' className='text-white' href='/'>
           Back to Home
         </ArrowLink>
@@ -44,7 +44,7 @@ export const AboutDetail = () => {
         </div>
       </section>
 
-      <div className='mt-32 w-full'>
+      <div className='mt-8 w-full lg:mt-32'>
         <section className='flex flex-col mb-32 w-full h-full lg:flex-row'>
           <div className='px-10 mb-16 w-full h-full lg:px-0 lg:mb-0 lg:w-1/2'>
             <h3 className='tracking-[0.15em] text-2xl font-normal text-white uppercase lg:text-4xl'>
@@ -60,13 +60,14 @@ export const AboutDetail = () => {
             </p>
           </div>
         </section>
+
         <section className='flex flex-col mb-32 w-full h-full'>
           <div className='px-10 mb-16 w-full h-full lg:px-0 lg:mb-0 lg:w-1/2'>
             <h3 className='tracking-[0.15em] text-2xl font-normal text-white uppercase lg:text-4xl'>
               <span className='text-red-custom font-semibold'>02</span> Passion
             </h3>
           </div>
-          <div className='flex flex-col justify-evenly mt-20 w-full h-full lg:flex-row'>
+          <div className='flex flex-col justify-center items-center m-auto mt-0 space-y-10 w-full h-full lg:flex-row lg:justify-evenly lg:items-start lg:mt-20 lg:space-y-0'>
             <div className='w-[300px]'>
               <div className='h-[120px] image-container w-full'>
                 <Image
@@ -129,6 +130,173 @@ export const AboutDetail = () => {
                   - Dr. Seuss
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className='flex flex-col mb-32 w-full h-full'>
+          <div className='px-10 mb-16 w-full h-full lg:px-0 lg:mb-0 lg:w-1/2'>
+            <h3 className='tracking-[0.15em] text-2xl font-normal text-white uppercase lg:text-4xl'>
+              <span className='text-red-custom font-semibold'>03</span> Skill
+              Set
+            </h3>
+          </div>
+          <div className='flex flex-wrap gap-10 justify-center items-center m-auto mt-0 w-full h-full md:w-3/4 lg:flex-row lg:justify-evenly lg:items-start lg:mt-20 lg:w-2/3'>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/mongodb.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                MongoDB
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/expressjs.png'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                ExpressJS
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/react.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                React
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/nodejs.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                NodeJS
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/typescript.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                Typescript
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/javascript.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                Javascript
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/mysql.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                MySQL
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/laravel.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                Laravel
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/tailwind.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                TailwindCSS
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/bootstrap.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                Bootstrap
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/php.svg'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                PHP
+              </p>
+            </div>
+            <div className='w-[100px]'>
+              <div className='h-[90px] image-container w-full'>
+                <Image
+                  src='/icons/nextjs.png'
+                  alt=''
+                  layout='fill'
+                  className='image'
+                />
+              </div>
+              <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+                NextJS
+              </p>
             </div>
           </div>
         </section>
