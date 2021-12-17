@@ -1,6 +1,10 @@
-import ButtonLink from '@/components/links/ButtonLink';
+import { useRouter } from 'next/router';
+
+import Button from '@/components/buttons/Button';
 
 export const Heading = () => {
+  const router = useRouter();
+
   return (
     <div className='z-[9] overflow-hidden absolute pb-24 w-full h-screen lg:pb-0'>
       <div className='flex justify-center items-end w-full h-full lg:justify-start lg:items-center lg:pb-0'>
@@ -50,9 +54,9 @@ export const Heading = () => {
             data-aos-delay='300'
             className='w-full'
           >
-            <ButtonLink variant='primary' href='/about'>
+            <Button variant='primary' onClick={() => router.push('/about')}>
               Show me more
-            </ButtonLink>
+            </Button>
           </div>
         </div>
       </div>

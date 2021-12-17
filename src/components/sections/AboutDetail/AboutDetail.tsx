@@ -2,9 +2,17 @@
 // import { About } from '../About/About';
 import Image from 'next/image';
 
+import ArrowLink from '@/components/links/ArrowLink';
+
 export const AboutDetail = () => {
   return (
-    <div className='container m-auto w-full h-full'>
+    <div className='container relative m-auto w-full h-full'>
+      <div className='sticky top-20'>
+        <ArrowLink direction='left' className='text-white' href='/'>
+          Back to Home
+        </ArrowLink>
+      </div>
+
       <section className='flex flex-col-reverse flex-wrap justify-around w-full h-screen'>
         <div className='flex justify-center items-start px-6 w-full h-1/3 lg:justify-start lg:items-center lg:px-0 lg:w-1/2 lg:h-full'>
           <div className='flex flex-col space-y-4 w-full lg:space-y-8'>
@@ -35,6 +43,7 @@ export const AboutDetail = () => {
           </div>
         </div>
       </section>
+
       <div className='mt-32 w-full'>
         <section className='flex flex-col mb-32 w-full h-full lg:flex-row'>
           <div className='px-10 mb-16 w-full h-full lg:px-0 lg:mb-0 lg:w-1/2'>
