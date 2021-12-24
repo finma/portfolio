@@ -1,6 +1,6 @@
 export const Heading = () => {
   return (
-    <div className='h-max flex justify-start px-8 mb-4 w-full lg:justify-start lg:items-center lg:pb-0 lg:w-1/2 lg:h-full'>
+    <div className='flex justify-start px-8 mb-4 w-full lg:justify-start lg:items-center lg:pb-0 lg:w-1/2 lg:h-full'>
       <div className='flex flex-col space-y-4 lg:space-y-8'>
         <div
           data-aos='fade-right'
