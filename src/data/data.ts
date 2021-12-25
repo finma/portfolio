@@ -108,3 +108,51 @@ export const links = [
     </svg>`,
   },
 ];
+
+export const works = [
+  {
+    title: 'Cryptoverse',
+    image: '/images/Cryptoverse.webp',
+    href: 'https://cryptoversee.vercel.app/',
+  },
+  {
+    title: 'Memories',
+    image: '/images/Memories.webp',
+    href: 'https://finma-memories-app.netlify.app/',
+  },
+  {
+    title: 'GameStore',
+    image: '/images/GameStore.png',
+    href: 'https://gamestoreku.vercel.app/',
+  },
+  {
+    title: 'ReactAdmin',
+    image: '/images/ReactAdmin.webp',
+    href: 'https://finmaadmin.netlify.app/',
+  },
+  {
+    title: 'RandQuote',
+    image: '/images/Randquote.webp',
+    href: 'https://randquote.vercel.app/',
+  },
+  {
+    title: 'QuranApp',
+    image: '/images/QuranApp.webp',
+    href: 'https://webquran.vercel.app/',
+  },
+  {
+    title: 'PizzaJoint',
+    image: '/images/PizzaJoint.webp',
+    href: 'https://pizzajointapp.vercel.app/',
+  },
+  {
+    title: 'Calculator',
+    image: '/images/Calculator.webp',
+    href: 'https://kalkulatorku.vercel.app/',
+  },
+  {
+    title: 'ChatRoom',
+    image: '/images/ChatRoom.webp',
+    href: 'https://metachatroom.netlify.app/',
+  },
+];

@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <>
-      <header className='z-[20] fixed py-4 w-full bg-transparent outline-none'>
+      <header className='fixed z-20 py-4 w-full bg-transparent outline-none'>
         <div className='flex relative justify-between items-center px-6 h-14'>
           <Link href='/'>
             <a className='cursor-new-tab inline-block hover:text-blue-900'>

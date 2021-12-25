@@ -1,10 +1,10 @@
 import Layout from '@/components/layout/Layout';
-import { Portfolio } from '@/components/sections';
+import { PortfolioDetail } from '@/components/sections';
 
 export default function PortfolioPage() {
   return (
     <Layout>
-      <Portfolio />
+      <PortfolioDetail />
     </Layout>
   );
 }
