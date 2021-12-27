@@ -18,7 +18,7 @@ export const WhoIAm = () => {
         </h3>
       </div>
       <div className='px-10 w-full h-full lg:px-12 lg:w-1/2'>
-        <p className='leading-[1.4rem] text-sm font-light tracking-wider text-white lg:leading-[2rem] lg:text-base lg:text-justify'>
+        <p className='leading-[1.4rem] text-sm font-light tracking-wider text-white md:text-base lg:leading-[2rem] lg:text-justify'>
           Hello, my name is Firman Maulana. I am {getAge()} years old and live
           in Indonesia. I am currently studying as a student at the Faculty of
           Engineering, majoring in Information Technology at the Siliwangi

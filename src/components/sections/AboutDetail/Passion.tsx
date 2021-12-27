@@ -44,7 +44,7 @@ const CardPassion = ({ title, icon, children }: PassionTypes) => {
         <h3 className='text-red-custom tracking-[0.5rem] font-semibold text-center uppercase'>
           {title}
         </h3>
-        <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+        <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white md:text-base lg:leading-[2rem]'>
           {ReactHtmlParser(children)}
         </p>
       </div>

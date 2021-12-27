@@ -112,47 +112,47 @@ export const links = [
 export const works = [
   {
     title: 'Cryptoverse',
-    image: '/images/Cryptoverse.webp',
+    image: '/images/Cryptoverse.png',
     href: 'https://cryptoversee.vercel.app/',
   },
   {
     title: 'Memories',
-    image: '/images/Memories.webp',
+    image: '/images/Memories.png',
     href: 'https://finma-memories-app.netlify.app/',
   },
   {
     title: 'GameStore',
-    image: '/images/GameStore.png',
+    image: '/images/Gamestore.png',
     href: 'https://gamestoreku.vercel.app/',
   },
   {
     title: 'ReactAdmin',
-    image: '/images/ReactAdmin.webp',
+    image: '/images/ReactAdmin.png',
     href: 'https://finmaadmin.netlify.app/',
   },
   {
     title: 'RandQuote',
-    image: '/images/Randquote.webp',
+    image: '/images/Randquote.png',
     href: 'https://randquote.vercel.app/',
   },
   {
     title: 'QuranApp',
-    image: '/images/QuranApp.webp',
+    image: '/images/QuranApp.png',
     href: 'https://webquran.vercel.app/',
   },
   {
     title: 'PizzaJoint',
-    image: '/images/PizzaJoint.webp',
+    image: '/images/PizzaJoint.png',
     href: 'https://pizzajointapp.vercel.app/',
   },
   {
     title: 'Calculator',
-    image: '/images/Calculator.webp',
+    image: '/images/Calculator.png',
     href: 'https://kalkulatorku.vercel.app/',
   },
   {
     title: 'ChatRoom',
-    image: '/images/ChatRoom.webp',
+    image: '/images/ChatRoom.png',
     href: 'https://metachatroom.netlify.app/',
   },
 ];

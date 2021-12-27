@@ -26,8 +26,8 @@ export const SkillSet = () => {
 
 const SkillCard = ({ title, icon }: SkillTypes) => {
   return (
-    <div className='w-[100px]'>
-      <div className='h-[90px] image-container w-full'>
+    <div className='w-[70px] md:w-[85px] lg:w-[100px]'>
+      <div className='h-[60px] image-container w-full md:w-[75px] lg:h-[90px]'>
         <Image src={icon} alt='' layout='fill' className='image' />
       </div>
       <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
