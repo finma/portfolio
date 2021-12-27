@@ -30,7 +30,7 @@ export default function Header() {
                 className='cursor-link image-container w-6 h-6 md:w-8 md:h-8'
               >
                 <Image
-                  src='/icons/Github-Mark-Light-32px.png'
+                  src='/icons/GitHub-Mark-Light-32px.png'
                   alt=''
                   layout='fill'
                   className='image'
