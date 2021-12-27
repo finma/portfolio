@@ -122,7 +122,7 @@ export const works = [
   },
   {
     title: 'GameStore',
-    image: '/images/Gamestore.png',
+    image: '/images/GameStore.png',
     href: 'https://gamestoreku.vercel.app/',
   },
   {
