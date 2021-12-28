@@ -1,10 +1,27 @@
 import Layout from '@/components/layout/Layout';
 import { PortfolioDetail } from '@/components/sections';
 
-export default function PortfolioPage() {
+import { getWorks } from '@/services/work';
+import type { WorkTypes } from '@/type/types';
+
+interface PortfolioProps {
+  data: WorkTypes[];
+}
+
+export default function PortfolioPage({ data }: PortfolioProps) {
   return (
     <Layout>
-      <PortfolioDetail />
+      <PortfolioDetail data={data} />
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const data = getWorks();
+
+  return {
+    props: {
+      data,
+    },
+  };
 }

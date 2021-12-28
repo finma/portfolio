@@ -23,36 +23,26 @@ export default function Header() {
               </p>
             </a>
           </Link>
-          <div className='flex items-center space-x-4 md:space-x-8'>
+          <div className='flex items-center space-x-4 md:space-x-4'>
             <Link href='https://github.com/finma'>
               <a
                 target='_blank'
                 className='cursor-link image-container w-6 h-6 md:w-8 md:h-8'
               >
                 <Image
-                  src='/icons/GitHub-Mark-Light-32px.png'
+                  src='/icons/github.svg'
                   alt=''
                   layout='fill'
                   className='image'
                 />
               </a>
             </Link>
-            <div className='hidden lg:block'>
-              <HamburgerSpin
-                isActive={isOpen}
-                toggleButton={toggleButton}
-                barColor='white'
-                buttonWidth={55}
-              />
-            </div>
-            <div className='block lg:hidden'>
-              <HamburgerSpin
-                isActive={isOpen}
-                toggleButton={toggleButton}
-                barColor='white'
-                buttonWidth={40}
-              />
-            </div>
+            <HamburgerSpin
+              isActive={isOpen}
+              toggleButton={toggleButton}
+              barColor='white'
+              buttonWidth={40}
+            />
           </div>
         </div>
       </header>

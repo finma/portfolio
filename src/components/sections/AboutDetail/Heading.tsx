@@ -44,6 +44,7 @@ export const Heading = () => {
           data-aos='fade'
           data-aos-easing='easeInOutCubic'
           data-aos-duration='1000'
+          data-aos-delay='200'
           className='image-container flex justify-center items-center p-6 w-full h-full md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px] lg:p-0'
         >
           <Image

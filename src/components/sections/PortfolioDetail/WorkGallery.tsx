@@ -1,21 +1,19 @@
 import Image from 'next/image';
 
-import { works } from '@/data/data';
-
 import ArrowLink from '@/components/links/ArrowLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
-interface CardProps {
-  title?: string;
-  image: string;
-  href: string;
+import type { WorkTypes } from '@/type/types';
+
+interface PortfolioProps {
+  data: WorkTypes[];
 }
 
-export const WorkGallery = () => {
+export const WorkGallery = ({ data }: PortfolioProps) => {
   return (
     <div className='flex justify-center w-full min-h-screen'>
       <div className='flex flex-wrap gap-5 justify-center m-auto'>
-        {works.map(({ image, href }) => (
+        {data.map(({ image, href }) => (
           <Card key={href} image={image} href={href} />
         ))}
       </div>
@@ -23,7 +21,7 @@ export const WorkGallery = () => {
   );
 };
 
-const Card = ({ image, href }: CardProps) => {
+const Card = ({ image, href }: WorkTypes) => {
   return (
     <div className='relative w-32 h-20 bg-white md:w-64 md:h-40 hover:brightness-100'>
       <ArrowLink

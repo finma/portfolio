@@ -1,13 +1,19 @@
 import { Footer } from '@/components/layout/Footer';
 
+import type { WorkTypes } from '@/type/types';
+
 import { Heading } from './Heading';
 import { WorkGallery } from './WorkGallery';
 
-export const PortfolioDetail = () => {
+interface PortfolioProps {
+  data: WorkTypes[];
+}
+
+export const PortfolioDetail = ({ data }: PortfolioProps) => {
   return (
     <div className='container relative m-auto w-full h-full'>
       <Heading />
-      <WorkGallery />
+      <WorkGallery data={data} />
       <Footer />
     </div>
   );

@@ -64,9 +64,10 @@ export const Heading = () => {
           className='image-container flex justify-center items-center p-6 w-72 h-full md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px] lg:p-0'
         >
           <Image
-            src='/icons/ufo.png'
+            src='/icons/ufo.svg'
             alt=''
             layout='fill'
+            priority
             className='image w-full h-full rounded-md shadow-xl'
           />
         </div>
