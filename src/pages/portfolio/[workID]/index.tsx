@@ -1,11 +1,48 @@
 import Layout from '@/components/layout/Layout';
+import { WorkDetail } from '@/components/sections';
 
-export default function WorkID() {
+import { getDetailWork, getWorks } from '@/services/work';
+import type { WorkTypes } from '@/type/types';
+
+interface WorkProps {
+  data: WorkTypes;
+}
+
+export default function WorkID({ data }: WorkProps) {
   return (
     <Layout>
-      <h1 className='text-2xl font-semibold tracking-wider text-white md:text-4xl lg:text-8xl'>
-        Nothing here
-      </h1>
+      <WorkDetail data={data} />
     </Layout>
   );
+}
+
+export async function getStaticPaths() {
+  const data = getWorks();
+  const paths = data.map((item) => ({
+    params: {
+      workID: item.id,
+    },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+interface GetStaticProps {
+  params: {
+    workID: string;
+  };
+}
+
+export async function getStaticProps({ params }: GetStaticProps) {
+  const { workID } = params;
+  const data = getDetailWork(workID);
+
+  return {
+    props: {
+      data,
+    },
+  };
 }

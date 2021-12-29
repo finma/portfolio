@@ -15,7 +15,9 @@ const Sidebar = () => {
             <Link key={href} href={href}>
               <a
                 className={`cursor-newtab inline-block p-2 h-6 hover:text-primary-400 ${
-                  router.asPath === href ? 'text-primary-400' : 'text-white'
+                  router.asPath === href || router.route === `${href}/[workID]`
+                    ? 'text-primary-400'
+                    : 'text-white'
                 }`}
               >
                 {ReactHtmlParser(icon)}

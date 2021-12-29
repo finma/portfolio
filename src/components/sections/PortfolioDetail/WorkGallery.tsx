@@ -13,21 +13,21 @@ export const WorkGallery = ({ data }: PortfolioProps) => {
   return (
     <div className='flex justify-center w-full min-h-screen'>
       <div className='flex flex-wrap gap-5 justify-center m-auto'>
-        {data.map(({ image, href }) => (
-          <Card key={href} image={image} href={href} />
+        {data.map(({ image, id }) => (
+          <Card key={id} image={image} id={id} />
         ))}
       </div>
     </div>
   );
 };
 
-const Card = ({ image, href }: WorkTypes) => {
+const Card = ({ image, id }: WorkTypes) => {
   return (
     <div className='relative w-32 h-20 bg-white md:w-64 md:h-40 hover:brightness-100'>
       <ArrowLink
         as={UnstyledLink}
         className='inline-flex absolute top-0 z-10 justify-center items-center w-full h-full text-sm font-normal text-white bg-primary-400 opacity-0 transition duration-150 md:text-lg md:font-medium hover:opacity-100'
-        href={href}
+        href={`/portfolio/${id}`}
       >
         View Project
       </ArrowLink>
