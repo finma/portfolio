@@ -11,7 +11,7 @@ interface PortfolioProps {
 
 export const WorkGallery = ({ data }: PortfolioProps) => {
   return (
-    <div className='flex justify-center w-full min-h-screen'>
+    <div className='flex justify-center mb-32 w-full h-full'>
       <div className='flex flex-wrap gap-5 justify-center m-auto'>
         {data.map(({ thumbnail, id }) => (
           <Card key={id} thumbnail={thumbnail} id={id} />

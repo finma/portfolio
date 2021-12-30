@@ -2,7 +2,7 @@ export interface WorkTypes {
   id?: string;
   title?: string;
   thumbnail: string;
-  image?: string;
+  image?: string[];
   href?: string;
   repo?: string;
   tech?: string[];

@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import { Carousel } from 'react-responsive-carousel';
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import { Footer } from '@/components/layout/Footer';
 import ArrowLink from '@/components/links/ArrowLink';
@@ -20,16 +23,23 @@ export const WorkDetail = ({ data }: WorkProps) => {
         Back
       </ArrowLink>
       <div className='flex flex-col-reverse gap-10 my-8 w-full h-full lg:flex-row'>
-        <div className='flex relative flex-wrap justify-start items-start w-full h-screen min-h-screen lg:w-2/3'>
-          <div className='image-container w-full h-full rounded-xl'>
-            <Image
-              src={data.image}
-              quality={100}
-              alt=''
-              layout='fill'
-              className='image rounded-xl'
-            />
-          </div>
+        <div className='flex relative flex-wrap justify-start items-start w-full h-full lg:w-2/3'>
+          <Carousel autoPlay infiniteLoop>
+            {data?.image?.map((img: string) => (
+              <div
+                key={img}
+                className='image-container w-full h-full rounded-xl'
+              >
+                <Image
+                  src={img}
+                  quality={100}
+                  alt=''
+                  width={800}
+                  height={500}
+                />
+              </div>
+            ))}
+          </Carousel>
         </div>
         <div className='space-y-8 w-full h-full lg:px-1 lg:w-1/3'>
           <Detail title={'Project Name'} desc={data.title} />
