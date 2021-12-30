@@ -24,7 +24,7 @@ export const WorkDetail = ({ data }: WorkProps) => {
       </ArrowLink>
       <div className='flex flex-col-reverse gap-10 my-8 w-full h-full lg:flex-row'>
         <div className='flex relative flex-wrap justify-start items-start w-full h-full lg:w-2/3'>
-          <Carousel autoPlay infiniteLoop>
+          <Carousel showThumbs={false} autoPlay infiniteLoop>
             {data?.image?.map((img: string) => (
               <div
                 key={img}
