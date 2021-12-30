@@ -16,6 +16,10 @@ export const Moon = () => {
 
   useEffect(() => {
     window.addEventListener('mousemove', parallax);
+
+    return () => {
+      window.removeEventListener('mousemove', parallax);
+    };
   }, []);
 
   return (
