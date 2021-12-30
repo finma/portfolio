@@ -1,51 +1,51 @@
 export const skillItems = [
   {
     title: 'MongoDB',
-    icon: '/icons/mongodb.svg',
+    icon: '/icons/skills/mongodb.svg',
   },
   {
     title: 'ExpressJS',
-    icon: '/icons/expressjs.svg',
+    icon: '/icons/skills/expressjs.svg',
   },
   {
     title: 'React',
-    icon: '/icons/react.svg',
+    icon: '/icons/skills/reactjs.svg',
   },
   {
     title: 'NodeJS',
-    icon: '/icons/nodejs.svg',
+    icon: '/icons/skills/nodejs.svg',
   },
   {
     title: 'Typescript',
-    icon: '/icons/typescript.svg',
+    icon: '/icons/skills/typescript.svg',
   },
   {
     title: 'Javascript',
-    icon: '/icons/javascript.svg',
+    icon: '/icons/skills/javascript.svg',
   },
   {
     title: 'MySQL',
-    icon: '/icons/mysql.svg',
+    icon: '/icons/skills/mysql.svg',
   },
   {
     title: 'Laravel',
-    icon: '/icons/laravel.svg',
+    icon: '/icons/skills/laravel.svg',
   },
   {
     title: 'TailwindCSS',
-    icon: '/icons/tailwind.svg',
+    icon: '/icons/skills/tailwindcss.svg',
   },
   {
     title: 'Bootstrap',
-    icon: '/icons/bootstrap.svg',
+    icon: '/icons/skills/bootstrap.svg',
   },
   {
     title: 'PHP',
-    icon: '/icons/php.svg',
+    icon: '/icons/skills/php.svg',
   },
   {
     title: 'NextJS',
-    icon: '/icons/nextjs.svg',
+    icon: '/icons/skills/nextjs.svg',
   },
 ];
 

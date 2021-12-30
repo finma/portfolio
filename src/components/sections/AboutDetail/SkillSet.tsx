@@ -25,11 +25,11 @@ export const SkillSet = ({ data }: AboutProps) => {
 
 const SkillCard = ({ title, icon }: SkillTypes) => {
   return (
-    <div className='w-[70px] flex flex-col justify-center items-center md:w-[85px] lg:w-[100px]'>
-      <div className='h-[60px] image-container w-full md:w-[75px] lg:h-[90px]'>
-        <Image src={icon} alt='' layout='fill' className='image' />
+    <div className='w-[70px] flex flex-col items-center md:w-[85px] lg:w-[100px]'>
+      <div className='h-[90px] w-full'>
+        <Image src={icon} alt='' width={90} height={90} className='' />
       </div>
-      <p className='leading-[1.4rem] text-sm font-light tracking-wider text-center text-white lg:leading-[2rem] lg:text-base'>
+      <p className='leading-[1.4rem] text-sm font-light tracking-wider text-white lg:leading-[2rem] lg:text-base'>
         {title}
       </p>
     </div>

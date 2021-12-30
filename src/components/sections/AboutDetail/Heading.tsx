@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const Heading = () => {
   return (
-    <section className='flex flex-col-reverse flex-wrap justify-around w-full h-screen'>
+    <section className='flex flex-col-reverse flex-wrap justify-around mt-6 w-full h-screen lg:mt-0'>
       <div className='flex justify-center items-start px-6 w-full h-1/3 lg:justify-start lg:items-center lg:px-0 lg:w-1/2 lg:h-full'>
         <div className='flex flex-col space-y-4 w-full lg:space-y-8'>
           <div
@@ -45,13 +45,14 @@ export const Heading = () => {
           data-aos-easing='easeInOutCubic'
           data-aos-duration='1000'
           data-aos-delay='200'
-          className='image-container flex justify-center items-center p-6 w-full h-full md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px] lg:p-0'
+          className='flex justify-center items-center p-6 w-full h-full md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px] lg:p-0'
         >
           <Image
             src='/images/profile.webp'
             alt=''
-            layout='fill'
-            className='image w-full h-full rounded-md shadow-xl'
+            width={450}
+            height={450}
+            className='rounded-md shadow-xl'
           />
         </div>
       </div>
