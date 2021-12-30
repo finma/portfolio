@@ -1,9 +1,11 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
 import { HamburgerSpin } from 'react-animated-burgers';
 
 import Navbar from '@/components/layout/Navbar';
+
+import CustomLink from '../links/CustomLink';
+import UnstyledLink from '../links/UnstyledLink';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,27 +18,32 @@ export default function Header() {
     <>
       <header className='fixed z-20 py-4 w-full bg-transparent outline-none'>
         <div className='flex relative justify-between items-center px-6 h-14'>
-          <Link href='/'>
-            <a className='cursor-new-tab inline-block hover:text-blue-900'>
-              <p className='z-auto px-3 py-1 text-xl font-medium tracking-widest text-white pointer-events-none'>
-                finma
-              </p>
-            </a>
-          </Link>
-          <div className='flex items-center space-x-4 md:space-x-4'>
-            <Link href='https://github.com/finma'>
-              <a
-                target='_blank'
-                className='cursor-link image-container w-6 h-6 md:w-8 md:h-8'
+          <CustomLink
+            href='/'
+            className='cursor-newtab py-1 ml-3 text-xl tracking-widest text-white'
+          >
+            finma
+          </CustomLink>
+          <div className='flex items-center space-x-1 lg:space-x-4'>
+            <div className='space-x-4 lg:space-x-6 lg:h-8'>
+              <UnstyledLink
+                href='https://www.linkedin.com/in/firmanmaulana2432/'
+                className='w-6 h-6 lg:w-8 lg:h-8'
               >
                 <Image
-                  src='/icons/github.svg'
+                  src='/icons/linkedin.svg'
                   alt=''
-                  layout='fill'
-                  className='image'
+                  width={32}
+                  height={32}
                 />
-              </a>
-            </Link>
+              </UnstyledLink>
+              <UnstyledLink
+                href='https://github.com/finma'
+                className='w-6 h-6 lg:w-8 lg:h-8'
+              >
+                <Image src='/icons/github.svg' alt='' width={32} height={32} />
+              </UnstyledLink>
+            </div>
             <HamburgerSpin
               isActive={isOpen}
               toggleButton={toggleButton}

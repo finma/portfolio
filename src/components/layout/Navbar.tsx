@@ -45,7 +45,8 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
                 >
                   <span
                     className={`md:text-8xl text-5xl font-medium text-white uppercase transition duration-200 transform hover:scale-110 ${
-                      router.asPath === href && 'line-through'
+                      (router.asPath === href && 'line-through') ||
+                      (router.route === `${href}/[workID]` && 'line-through')
                     }`}
                   >
                     {label}
