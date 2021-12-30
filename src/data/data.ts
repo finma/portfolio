@@ -53,6 +53,7 @@ export const works = [
   {
     id: 'cryptoverse',
     title: 'Cryptoverse',
+    thumbnail: '/images/Cryptoverse.png',
     image: '/images/Cryptoverse.png',
     href: 'https://cryptoversee.vercel.app/',
     repo: 'https://github.com/finma/cryptoverse',
@@ -61,6 +62,7 @@ export const works = [
   {
     id: 'memories',
     title: 'Memories',
+    thumbnail: '/images/Memories.png',
     image: '/images/Memories.png',
     href: 'https://finma-memories-app.netlify.app/',
     repo: 'https://github.com/finma/memories-app-frontend',
@@ -69,6 +71,7 @@ export const works = [
   {
     id: 'gamestore',
     title: 'GameStore',
+    thumbnail: '/images/GameStore.png',
     image: '/images/GameStore.png',
     href: 'https://gamestoreku.vercel.app/',
     repo: '',
@@ -77,22 +80,16 @@ export const works = [
   {
     id: 'reactadmin',
     title: 'ReactAdmin',
+    thumbnail: '/images/ReactAdmin.png',
     image: '/images/ReactAdmin.png',
     href: 'https://finmaadmin.netlify.app/',
     repo: 'https://github.com/finma/react-admin-dashboard',
     tech: ['ReactJS', 'TailwindCSS'],
   },
   {
-    id: 'randquote',
-    title: 'RandQuote',
-    image: '/images/Randquote.png',
-    repo: 'https://github.com/finma/freecodecamp-random-quote',
-    href: 'https://randquote.vercel.app/',
-    tech: ['ReactJS'],
-  },
-  {
     id: 'quranapp',
     title: 'QuranApp',
+    thumbnail: '/images/QuranApp.png',
     image: '/images/QuranApp.png',
     href: 'https://webquran.vercel.app/',
     repo: 'https://github.com/finma/quran-app',
@@ -101,6 +98,7 @@ export const works = [
   {
     id: 'pizzajoint',
     title: 'PizzaJoint',
+    thumbnail: '/images/PizzaJoint.png',
     image: '/images/PizzaJoint.png',
     href: 'https://pizzajointapp.vercel.app/',
     repo: 'https://github.com/finma/framer-motion-basic',
@@ -109,6 +107,7 @@ export const works = [
   {
     id: 'calculator',
     title: 'Calculator',
+    thumbnail: '/images/Calculator.png',
     image: '/images/Calculator.png',
     repo: 'https://github.com/finma/freecodecamp-calculator',
     href: 'https://kalkulatorku.vercel.app/',
@@ -117,6 +116,7 @@ export const works = [
   {
     id: 'chatroom',
     title: 'ChatRoom',
+    thumbnail: '/images/ChatRoom.png',
     image: '/images/ChatRoom.png',
     href: 'https://metachatroom.netlify.app/',
     repo: 'https://github.com/finma/chatroom',
@@ -129,7 +129,7 @@ export const passionItems = [
     title: 'Coding',
     icon: '/icons/coding.svg',
     description:
-      'I started like coding since I was in college. From there I learned programming languages and structural algorithms. I had a hard time at first, but when I tried again and again I ended up liking it',
+      'I started like coding since I was in college. From there I learned programming languages and structural algorithms. I had a hard time at first, but when I tried again and again, I finally love it',
   },
   {
     title: 'Technology',
