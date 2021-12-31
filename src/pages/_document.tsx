@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-document-import-in-page */
 import Document, {
   DocumentContext,
   Head,
@@ -23,6 +24,16 @@ class MyDocument extends Document {
             type='font/woff2'
             crossOrigin='anonymous'
           />
+          <link rel='preconnect' href='https://fonts.googleapis.com' />
+          <link
+            rel='preconnect'
+            href='https://fonts.gstatic.com'
+            crossOrigin='anonymous'
+          />
+          <link
+            href='https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap'
+            rel='stylesheet'
+          ></link>
         </Head>
         <body>
           <Main />
