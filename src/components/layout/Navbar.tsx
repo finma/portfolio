@@ -6,6 +6,7 @@ const links = [
   { label: 'home', section: '/#home', href: '/' },
   { label: 'about', section: '/#about', href: '/about' },
   { label: 'portfolio', section: '/#portfolio', href: '/portfolio' },
+  { label: 'blog', section: '/#blog', href: '/blog' },
   { label: 'contact', section: '/#contact', href: '/contact' },
 ];
 
@@ -46,7 +47,9 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
                   <span
                     className={`md:text-8xl text-5xl font-medium text-white uppercase transition duration-200 transform hover:scale-110 ${
                       (router.asPath === href && 'line-through') ||
-                      (router.route === `${href}/[workID]` && 'line-through')
+                      ((router.route === `${href}/[workID]` ||
+                        router.route === `${href}/[blogID]`) &&
+                        'line-through')
                     }`}
                   >
                     {label}
