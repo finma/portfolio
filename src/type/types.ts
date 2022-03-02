@@ -12,3 +12,12 @@ export interface SkillTypes {
   title: string;
   icon: string;
 }
+
+export interface BlogTypes {
+  id: number;
+  image: string;
+  title: string;
+  category: string;
+  content: string;
+  body: string;
+}
