@@ -86,6 +86,73 @@ export const blogs = [
 <p style="padding-left: 40px;">PHP adalah bahasa scripting yang tujuan umumnya diarahkan ke pengembangan web. PHP awalnya dibuat oleh programmer Denmark-Kanada Rasmus Lerdorf pada tahun 1994. Implementasi referensi PHP sekarang diproduksi oleh The PHP Group. PHP awalnya merupakan singkatan dari Personal Home Page, tetapi sekarang merupakan singkatan dari inisialisasi rekursif PHP: Hypertext Preprocessor.</p>
 <p style="padding-left: 40px;">&nbsp;</p>`,
   },
+  {
+    id: 3,
+    image: '/images/blog/3.jpg',
+    title: 'Etika Profesi Web Developer',
+    category: 'web developement',
+    content:
+      'Sebagai web developer, sudah seharunya bertanggung jawab untuk membentuk pengalaman online pengguna. Dengan membuat pilihan yang etis dan berpusat pada pengguna, maka dibuatlah web yang baik untuk semua orang.',
+    body: `<p>Sebagai web developer, sudah seharunya bertanggung jawab untuk membentuk pengalaman online pengguna. Dengan membuat pilihan yang etis dan berpusat pada pengguna, maka dibuatlah web yang baik untuk semua orang.</p>
+
+<p>&nbsp;</p>
+
+<p>Prinsip web developement yang etis :</p>
+
+<p>&nbsp;</p>
+
+<p>1. Aplikasi web harus bekerja untuk semua orang</p>
+
+<p style="margin-left:40px">a) Dibangun di atas peningkatan progresif</p>
+
+<p style="margin-left:40px">b) Prioritaskan aksesibilitas</p>
+
+<p style="margin-left:40px">c) Kembangkan formulir inklusif</p>
+
+<p style="margin-left:40px">d) Uji dengan pengguna nyata</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p>2. Aplikasi web harus bekerja di mana saja</p>
+
+<p style="margin-left:40px">a) Dibangun secara responsif</p>
+
+<p style="margin-left:40px">b) Nilai kinerja</p>
+
+<p style="margin-left:40px">c) Manfaatkan kemampuan off-line terlebih dahulu</p>
+
+<p style="margin-left:40px">d) Buka tautan dalam yang permanen, dapat dibaca manusia</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p>3. Aplikasi web harus menghormati privasi dan keamanan pengguna</p>
+
+<p style="margin-left:40px">a) Gunakan https di mana-mana</p>
+
+<p style="margin-left:40px">b) Hormati preferensi pelacakan pengguna</p>
+
+<p style="margin-left:40px">c) Berikan informasi yang jelas kepada pengguna tentang bagaimana informasi mereka digunakan</p>
+
+<p style="margin-left:40px">d) Izinkan pengguna mengekspor data mereka</p>
+
+<p style="margin-left:40px">e) Mengamankan data pengguna</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p>4. Pengembang web harus mempertimbangkan rekan-rekan mereka</p>
+
+<p style="margin-left:40px">a) Komentar dan kode dokumen</p>
+
+<p style="margin-left:40px">b) Lint dan kode uji</p>
+
+<p style="margin-left:40px">c) Manfaatkan kontrol sumber dan integrasi berkelanjutan</p>
+
+<p style="margin-left:40px">d) Konsumsi dan kontribusikan ke open source jika memungkinkan</p>
+
+<p style="margin-left:40px">e) Perlakukan pengembang lain dengan hormat</p>
+
+<p style="margin-left:40px">f) Tawarkan, ikuti, dan terapkan kode etik untuk proyek sumber terbuka</p>`,
+  },
 ];
 
 // <a href='https://www.freepik.com/photos/technology'>

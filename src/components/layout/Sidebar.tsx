@@ -10,19 +10,22 @@ const Sidebar = () => {
       <nav className='flex flex-col space-y-8 w-12'>
         {links?.map(({ href, icon }) => {
           return (
-            <UnstyledLink
-              key={href}
-              href={href}
-              className={`cursor-newtab inline-block p-2 h-6 hover:text-primary-400 ${
-                router.asPath === href ||
-                router.route === `${href}/[workID]` ||
-                router.route === `${href}/[blogID]`
-                  ? 'text-primary-400'
-                  : 'text-white'
-              }`}
-            >
-              {icon}
-            </UnstyledLink>
+            <>
+              <UnstyledLink
+                data-tooltip-target='tooltip-default'
+                key={href}
+                href={href}
+                className={`cursor-newtab inline-block p-2 h-6 hover:text-primary-400 ${
+                  router.asPath === href ||
+                  router.route === `${href}/[workID]` ||
+                  router.route === `${href}/[blogID]`
+                    ? 'text-primary-400'
+                    : 'text-white'
+                }`}
+              >
+                {icon}
+              </UnstyledLink>
+            </>
           );
         })}
       </nav>
