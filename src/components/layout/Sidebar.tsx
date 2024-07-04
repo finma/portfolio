@@ -17,7 +17,7 @@ const Sidebar = () => {
                 href={href}
                 className={`cursor-newtab inline-block p-2 h-6 hover:text-primary-400 ${
                   router.asPath === href ||
-                  router.route === `${href}/[workID]` ||
+                  router.route === `${href}/[portfolioID]` ||
                   router.route === `${href}/[blogID]`
                     ? 'text-primary-400'
                     : 'text-white'
