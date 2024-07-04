@@ -7,7 +7,7 @@ import { PortfolioTypes } from '@/type/types';
 
 export const CardPortfolio = ({ thumbnail, id }: PortfolioTypes) => {
   return (
-    <div className='relative w-32 h-20 bg-transparent md:w-64 md:h-40 hover:brightness-100'>
+    <div className='relative mx-auto w-full h-52 bg-transparent md:h-56 hover:brightness-100'>
       <ArrowLink
         as={UnstyledLink}
         className='cursor-newtab inline-flex absolute top-0 z-10 justify-center items-center w-full h-full text-sm font-normal text-white bg-primary-400 rounded-xl opacity-0 transition duration-150 md:text-lg md:font-medium hover:opacity-[0.8]'
