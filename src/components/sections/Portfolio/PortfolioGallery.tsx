@@ -1,9 +1,9 @@
-import { getWorks } from '@/services/work';
+import { getPortfolios } from '@/services/portfolio';
 
 import { CardPortfolio } from './components/CardPortfolio';
 
-export const WorkGallery = () => {
-  const portfolios = getWorks();
+export const PortfolioGallery = () => {
+  const portfolios = getPortfolios();
 
   return (
     <div className='flex justify-center mb-32 w-full h-full'>

@@ -3,9 +3,9 @@ import Image from 'next/image';
 import ArrowLink from '@/components/links/ArrowLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
-import { WorkTypes } from '@/type/types';
+import { PortfolioTypes } from '@/type/types';
 
-export const CardPortfolio = ({ thumbnail, id }: WorkTypes) => {
+export const CardPortfolio = ({ thumbnail, id }: PortfolioTypes) => {
   return (
     <div className='relative w-32 h-20 bg-transparent md:w-64 md:h-40 hover:brightness-100'>
       <ArrowLink

@@ -1,26 +1,26 @@
 import Layout from '@/components/layout/Layout';
-import { WorkDetail } from '@/components/sections';
+import { PortfolioDetail } from '@/components/sections';
 
-import { getDetailWork, getWorks } from '@/services/work';
-import type { WorkTypes } from '@/type/types';
+import { getDetailPortfolio, getPortfolios } from '@/services/portfolio';
+import type { PortfolioTypes } from '@/type/types';
 
-interface WorkProps {
-  data: WorkTypes;
+interface PortfolioProps {
+  data: PortfolioTypes;
 }
 
-export default function WorkID({ data }: WorkProps) {
+export default function PortfolioID({ data }: PortfolioProps) {
   return (
     <Layout>
-      <WorkDetail data={data} />
+      <PortfolioDetail data={data} />
     </Layout>
   );
 }
 
 export async function getStaticPaths() {
-  const data = getWorks();
+  const data = getPortfolios();
   const paths = data.map((item) => ({
     params: {
-      workID: item.id,
+      portfolioID: item.id,
     },
   }));
 
@@ -32,13 +32,13 @@ export async function getStaticPaths() {
 
 interface GetStaticProps {
   params: {
-    workID: string;
+    portfolioID: string;
   };
 }
 
 export async function getStaticProps({ params }: GetStaticProps) {
-  const { workID } = params;
-  const data = getDetailWork(workID);
+  const { portfolioID } = params;
+  const data = getDetailPortfolio(portfolioID);
 
   return {
     props: {

@@ -49,7 +49,7 @@ export const skillItems = [
   },
 ];
 
-export const works = [
+export const portfolios = [
   {
     id: 'cryptoverse',
     title: 'Cryptoverse',

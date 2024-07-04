@@ -1,4 +1,4 @@
-export interface WorkTypes {
+export interface PortfolioTypes {
   id?: string;
   title?: string;
   thumbnail: string;
