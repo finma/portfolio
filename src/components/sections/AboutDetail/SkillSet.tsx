@@ -1,7 +1,6 @@
-import Image from 'next/image';
-
 import { getSkills } from '@/services/skill';
-import type { SkillTypes } from '@/type/types';
+
+import { CardSkill } from './components/CardSkill';
 
 export const SkillSet = () => {
   const skills = getSkills();
@@ -15,22 +14,9 @@ export const SkillSet = () => {
       </div>
       <div className='flex flex-wrap gap-10 justify-center items-center m-auto mt-0 w-full h-full md:w-3/4 lg:flex-row lg:justify-evenly lg:items-start lg:mt-20 lg:w-2/3'>
         {skills.map(({ title, icon }) => (
-          <SkillCard key={title} title={title} icon={icon} />
+          <CardSkill key={title} title={title} icon={icon} />
         ))}
       </div>
     </section>
-  );
-};
-
-const SkillCard = ({ title, icon }: SkillTypes) => {
-  return (
-    <div className='w-[70px] flex flex-col items-center md:w-[85px] lg:w-[100px]'>
-      <div className='h-[90px] w-full'>
-        <Image priority src={icon} alt='' width={90} height={90} className='' />
-      </div>
-      <p className='leading-[1.4rem] text-sm font-light tracking-wider text-white lg:leading-[2rem] lg:text-base'>
-        {title}
-      </p>
-    </div>
   );
 };
