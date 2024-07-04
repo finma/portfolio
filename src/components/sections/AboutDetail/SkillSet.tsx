@@ -1,12 +1,11 @@
 import Image from 'next/image';
 
+import { getSkills } from '@/services/skill';
 import type { SkillTypes } from '@/type/types';
 
-interface AboutProps {
-  data: SkillTypes[];
-}
+export const SkillSet = () => {
+  const skills = getSkills();
 
-export const SkillSet = ({ data }: AboutProps) => {
   return (
     <section className='flex flex-col mb-32 w-full h-full'>
       <div className='px-10 mb-16 w-full h-full lg:px-0 lg:mb-0 lg:w-1/2'>
@@ -15,7 +14,7 @@ export const SkillSet = ({ data }: AboutProps) => {
         </h3>
       </div>
       <div className='flex flex-wrap gap-10 justify-center items-center m-auto mt-0 w-full h-full md:w-3/4 lg:flex-row lg:justify-evenly lg:items-start lg:mt-20 lg:w-2/3'>
-        {data.map(({ title, icon }) => (
+        {skills.map(({ title, icon }) => (
           <SkillCard key={title} title={title} icon={icon} />
         ))}
       </div>
