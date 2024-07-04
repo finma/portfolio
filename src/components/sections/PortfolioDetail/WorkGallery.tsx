@@ -3,17 +3,16 @@ import Image from 'next/image';
 import ArrowLink from '@/components/links/ArrowLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
+import { getWorks } from '@/services/work';
 import type { WorkTypes } from '@/type/types';
 
-interface PortfolioProps {
-  data: WorkTypes[];
-}
+export const WorkGallery = () => {
+  const portfolios = getWorks();
 
-export const WorkGallery = ({ data }: PortfolioProps) => {
   return (
     <div className='flex justify-center mb-32 w-full h-full'>
       <div className='flex flex-wrap gap-5 justify-center m-auto'>
-        {data.map(({ thumbnail, id }) => (
+        {portfolios.map(({ thumbnail, id }) => (
           <Card key={id} thumbnail={thumbnail} id={id} />
         ))}
       </div>
