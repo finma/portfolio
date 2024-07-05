@@ -1,4 +1,4 @@
-import { passionItems } from '@/data/data';
+import { passions } from '@/data/passion';
 
 import { CardPassion } from './components/CardPassion';
 
@@ -16,7 +16,7 @@ export const Passion = () => {
         </h3>
       </div>
       <div className='flex flex-col justify-center items-center m-auto mt-0 space-y-10 w-full h-full lg:flex-row lg:justify-evenly lg:items-start lg:mt-20 lg:space-y-0'>
-        {passionItems.map(({ title, icon, description }, index) => (
+        {passions.map(({ title, icon, description }, index) => (
           <div
             key={title}
             data-aos='fade-up'

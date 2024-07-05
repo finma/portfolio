@@ -1,5 +1,5 @@
-import { skillItems } from '@/data/data';
+import { skills } from '@/data/skill';
 
 export const getSkills = () => {
-  return skillItems;
+  return skills;
 };

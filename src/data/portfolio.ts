@@ -1,54 +1,3 @@
-export const skillItems = [
-  {
-    title: 'MongoDB',
-    icon: '/icons/skills/mongodb.svg',
-  },
-  {
-    title: 'ExpressJS',
-    icon: '/icons/skills/expressjs.svg',
-  },
-  {
-    title: 'React',
-    icon: '/icons/skills/reactjs.svg',
-  },
-  {
-    title: 'NodeJS',
-    icon: '/icons/skills/nodejs.svg',
-  },
-  {
-    title: 'Typescript',
-    icon: '/icons/skills/typescript.svg',
-  },
-  {
-    title: 'Javascript',
-    icon: '/icons/skills/javascript.svg',
-  },
-  {
-    title: 'MySQL',
-    icon: '/icons/skills/mysql.svg',
-  },
-  {
-    title: 'Laravel',
-    icon: '/icons/skills/laravel.svg',
-  },
-  {
-    title: 'TailwindCSS',
-    icon: '/icons/skills/tailwindcss.svg',
-  },
-  {
-    title: 'Bootstrap',
-    icon: '/icons/skills/bootstrap.svg',
-  },
-  {
-    title: 'PHP',
-    icon: '/icons/skills/php.svg',
-  },
-  {
-    title: 'NextJS',
-    icon: '/icons/skills/nextjs.svg',
-  },
-];
-
 export const portfolios = [
   {
     id: 'cryptoverse',
@@ -121,25 +70,5 @@ export const portfolios = [
     href: 'https://metachatroom.netlify.app/',
     repo: 'https://github.com/finma/chatroom',
     tech: ['ReactJS', 'Firebase', 'React Chat Engine'],
-  },
-];
-
-export const passionItems = [
-  {
-    title: 'Coding',
-    icon: '/icons/coding.svg',
-    description:
-      'I started like coding since I was in college. From there I learned programming languages and structural algorithms. I had a hard time at first, but when I tried again and again, I finally love it',
-  },
-  {
-    title: 'Technology',
-    icon: '/icons/cpu.svg',
-    description:
-      "Technology is the sum of every technique, skill, method, and process used in the production of goods or services. Over time, technology is developing. I'm very interested in technology, I can't wait to see what technology will look like in the future",
-  },
-  {
-    title: 'Learn New Things',
-    icon: '/icons/learning.svg',
-    description: `“The more that you read, the more things you will know. The more that you learn, the more places you'll go.” - Dr. Seuss`,
   },
 ];

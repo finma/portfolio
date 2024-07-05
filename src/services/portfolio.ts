@@ -1,4 +1,4 @@
-import { portfolios } from '@/data/data';
+import { portfolios } from '@/data/portfolio';
 
 export const getPortfolios = () => {
   return portfolios;
