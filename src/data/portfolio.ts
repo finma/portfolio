@@ -2,8 +2,8 @@ export const portfolios = [
   {
     id: 'cryptoverse',
     title: 'Cryptoverse',
-    thumbnail: '/images/Cryptoverse.png',
-    image: ['/images/Cryptoverse.png'],
+    thumbnail: '/images/portfolios/Cryptoverse.png',
+    image: ['/images/portfolios/Cryptoverse.png'],
     href: 'https://cryptoversee.vercel.app/',
     repo: 'https://github.com/finma/cryptoverse',
     tech: ['ReactJS', 'NextJS', 'Typescript', 'TailwindCSS'],
@@ -11,8 +11,8 @@ export const portfolios = [
   {
     id: 'memories',
     title: 'Memories',
-    thumbnail: '/images/Memories.png',
-    image: ['/images/Memories.png'],
+    thumbnail: '/images/portfolios/Memories.png',
+    image: ['/images/portfolios/Memories.png'],
     href: 'https://finma-memories-app.netlify.app/',
     repo: 'https://github.com/finma/memories-app-frontend',
     tech: ['ReactJS', 'Redux', 'MaterialUI', 'NodeJS', 'ExpressJS', 'MongoDB'],
@@ -20,8 +20,11 @@ export const portfolios = [
   {
     id: 'gamestore',
     title: 'GameStore',
-    thumbnail: '/images/GameStore.png',
-    image: ['/images/GameStore.png', '/images/Gamestore2.png'],
+    thumbnail: '/images/portfolios/GameStore.png',
+    image: [
+      '/images/portfolios/GameStore.png',
+      '/images/portfolios/Gamestore2.png',
+    ],
     href: 'https://gamestoreku.vercel.app/',
     repo: '',
     tech: ['ReactJS', 'NextJS', 'Typescript', 'NodeJS', 'ExpressJS', 'MongoDB'],
@@ -29,8 +32,11 @@ export const portfolios = [
   {
     id: 'reactadmin',
     title: 'ReactAdmin',
-    thumbnail: '/images/ReactAdmin.png',
-    image: ['/images/ReactAdmin.png', '/images/ReactAdmin2.png'],
+    thumbnail: '/images/portfolios/ReactAdmin.png',
+    image: [
+      '/images/portfolios/ReactAdmin.png',
+      '/images/portfolios/ReactAdmin2.png',
+    ],
     href: 'https://finmaadmin.netlify.app/',
     repo: 'https://github.com/finma/react-admin-dashboard',
     tech: ['ReactJS', 'TailwindCSS'],
@@ -38,8 +44,8 @@ export const portfolios = [
   {
     id: 'quranapp',
     title: 'QuranApp',
-    thumbnail: '/images/QuranApp.png',
-    image: ['/images/QuranApp.png'],
+    thumbnail: '/images/portfolios/QuranApp.png',
+    image: ['/images/portfolios/QuranApp.png'],
     href: 'https://webquran.vercel.app/',
     repo: 'https://github.com/finma/quran-app',
     tech: ['ReactJS', 'NextJS', 'Typescript', 'TailwindCSS'],
@@ -47,8 +53,8 @@ export const portfolios = [
   {
     id: 'pizzajoint',
     title: 'PizzaJoint',
-    thumbnail: '/images/PizzaJoint.png',
-    image: ['/images/PizzaJoint.png'],
+    thumbnail: '/images/portfolios/PizzaJoint.png',
+    image: ['/images/portfolios/PizzaJoint.png'],
     href: 'https://pizzajointapp.vercel.app/',
     repo: 'https://github.com/finma/framer-motion-basic',
     tech: ['ReactJS', 'Framer Motion'],
@@ -56,8 +62,8 @@ export const portfolios = [
   {
     id: 'calculator',
     title: 'Calculator',
-    thumbnail: '/images/Calculator.png',
-    image: ['/images/Calculator.png'],
+    thumbnail: '/images/portfolios/Calculator.png',
+    image: ['/images/portfolios/Calculator.png'],
     repo: 'https://github.com/finma/freecodecamp-calculator',
     href: 'https://kalkulatorku.vercel.app/',
     tech: ['ReactJS'],
@@ -65,8 +71,8 @@ export const portfolios = [
   {
     id: 'chatroom',
     title: 'ChatRoom',
-    thumbnail: '/images/ChatRoom.png',
-    image: ['/images/ChatRoom.png'],
+    thumbnail: '/images/portfolios/ChatRoom.png',
+    image: ['/images/portfolios/ChatRoom.png'],
     href: 'https://metachatroom.netlify.app/',
     repo: 'https://github.com/finma/chatroom',
     tech: ['ReactJS', 'Firebase', 'React Chat Engine'],
