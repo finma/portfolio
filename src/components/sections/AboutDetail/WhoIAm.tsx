@@ -23,9 +23,11 @@ export const WhoIAm = () => {
       >
         <p className='leading-[1.4rem] text-sm font-light tracking-wider text-white md:text-base lg:leading-[2rem] lg:text-justify'>
           Hello, my name is Firman Maulana. I am {age} years old and live in
-          Indonesia. I am currently studying as a student at the Faculty of
-          Engineering, majoring in Information Technology at the Siliwangi
-          University.
+          Indonesia. I graduated with a Bachelor&apos;s degree in Informatics
+          Engineering from Universitas Siliwangi with experience as a fullstack
+          developer through internships and freelance work. I am committed to
+          becoming a fullstack developer with skills in Javascript/Typescript,
+          ReactJS, NextJS, ExpressJS, NestJS, MongoDB, MySQL, etc.
         </p>
       </div>
     </section>
