@@ -6,6 +6,8 @@ import { FormEvent, useRef, useState } from 'react';
 import { toast } from 'sonner';
 
 import Button from '@/components/buttons/Button';
+import { FormInput } from '@/components/form/FormInput';
+import { FormTextarea } from '@/components/form/FormTextarea';
 
 export const Form = () => {
   const scriptURL = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_API_URL!;
@@ -41,71 +43,48 @@ export const Form = () => {
     >
       <form onSubmit={onSubmit} ref={formRef} className='w-full max-w-lg'>
         <div className='flex flex-wrap -mx-3 mb-2 lg:mb-6'>
+          {/* Name */}
           <div className='px-3 mb-2 w-full md:mb-0 md:w-1/2'>
-            <label
-              className='block mb-2 text-sm font-bold tracking-wide text-white'
-              htmlFor='name'
-            >
-              Name
-            </label>
-            <input
-              className='border-red-custom caret-red-custom block px-4 py-3 mb-3 w-full leading-tight text-white bg-transparent rounded border-2 appearance-none focus:bg-transparent focus:outline-none'
+            <FormInput
               id='name'
-              name='name'
+              label='Name'
               type='text'
               placeholder='Name'
               required
             />
           </div>
+
+          {/* Email */}
           <div className='px-3 w-full md:w-1/2'>
-            <label
-              className='block mb-2 text-sm font-bold tracking-wide text-white'
-              htmlFor='email'
-            >
-              Email
-            </label>
-            <input
-              className='border-red-custom caret-red-custom block px-4 py-3 mb-3 w-full leading-tight text-white bg-transparent rounded border-2 appearance-none focus:bg-transparent focus:outline-none'
+            <FormInput
               id='email'
-              name='email'
+              label='Email'
               type='email'
               placeholder='Email'
-              required
             />
           </div>
         </div>
+
+        {/* Subject */}
         <div className='flex flex-wrap -mx-3 mb-2 lg:mb-6'>
           <div className='px-3 w-full'>
-            <label
-              className='block mb-2 text-sm font-bold tracking-wide text-white'
-              htmlFor='subject'
-            >
-              Subject
-            </label>
-            <input
-              className='border-red-custom caret-red-custom block px-4 py-3 mb-3 w-full leading-tight text-white bg-transparent rounded border-2 appearance-none focus:bg-transparent focus:outline-none'
+            <FormInput
               id='subject'
-              name='subject'
+              label='Subject'
               type='text'
               placeholder='Subject'
               required
             />
           </div>
         </div>
+
+        {/* Message */}
         <div className='flex flex-wrap -mx-3 mb-2 lg:mb-6'>
           <div className='px-3 w-full'>
-            <label
-              htmlFor='message'
-              className='block mb-2 text-sm font-bold tracking-wide text-white'
-            >
-              Message
-            </label>
-            <textarea
-              className='border-red-custom caret-red-custom block px-4 py-3 mb-3 w-full h-32 leading-tight text-white bg-transparent rounded border-2 appearance-none resize-none focus:bg-transparent focus:outline-none'
+            <FormTextarea
               id='message'
-              name='message'
+              label='Message'
               placeholder='Message'
-              rows={4}
               required
             />
           </div>
