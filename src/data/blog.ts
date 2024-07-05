@@ -1,7 +1,7 @@
 export const blogs = [
   {
     id: 1,
-    image: '/images/blog/1.jpg',
+    image: '/images/blogs/1.jpg',
     title: 'Pengertian dan Sejarah Website',
     category: 'web development',
     content:
@@ -31,7 +31,7 @@ export const blogs = [
   },
   {
     id: 2,
-    image: '/images/blog/2.jpg',
+    image: '/images/blogs/2.jpg',
     title:
       'Memahami Apa Itu Web Developer, Serta Tugas dan Kemampuan yang Dibutuhkan untuk Menjadi Seorang Web Developer',
     category: 'web development',
@@ -88,7 +88,7 @@ export const blogs = [
   },
   {
     id: 3,
-    image: '/images/blog/3.jpg',
+    image: '/images/blogs/3.jpg',
     title: 'Etika Profesi Web Developer',
     category: 'web developement',
     content:
