@@ -8,26 +8,22 @@ const Sidebar = () => {
   return (
     <aside className='w-[120px] z-[18] hidden fixed justify-center items-center h-screen bg-transparent outline-none lg:flex'>
       <nav className='flex flex-col space-y-8 w-12'>
-        {links?.map(({ href, icon }) => {
-          return (
-            <>
-              <UnstyledLink
-                data-tooltip-target='tooltip-default'
-                key={href}
-                href={href}
-                className={`cursor-newtab inline-block p-2 h-6 hover:text-primary-400 ${
-                  router.asPath === href ||
-                  router.route === `${href}/[portfolioID]` ||
-                  router.route === `${href}/[blogID]`
-                    ? 'text-primary-400'
-                    : 'text-white'
-                }`}
-              >
-                {icon}
-              </UnstyledLink>
-            </>
-          );
-        })}
+        {links?.map(({ href, icon }) => (
+          <UnstyledLink
+            data-tooltip-target='tooltip-default'
+            key={href}
+            href={href}
+            className={`cursor-newtab inline-block p-2 h-6 hover:text-primary-400 ${
+              router.asPath === href ||
+              router.route === `${href}/[portfolioID]` ||
+              router.route === `${href}/[blogID]`
+                ? 'text-primary-400'
+                : 'text-white'
+            }`}
+          >
+            {icon}
+          </UnstyledLink>
+        ))}
       </nav>
     </aside>
   );
