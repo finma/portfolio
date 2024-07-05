@@ -11,7 +11,7 @@ import '@/styles/globals.css';
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({
-      disable: 'mobile',
+      // disable: 'mobile',
     });
   });
 
