@@ -21,7 +21,7 @@ export const SkillSet = () => {
         {skills.map(({ title, icon }, index) => (
           <div
             key={title}
-            data-aos='fade'
+            data-aos='fade-up'
             data-aos-easing='easeInOutCubic'
             data-aos-duration='1000'
             data-aos-delay={index * 50}

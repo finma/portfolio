@@ -16,7 +16,7 @@ export const WhoIAm = () => {
         </h3>
       </div>
       <div
-        data-aos='fade-left'
+        data-aos='fade-up'
         data-aos-easing='easeInOutCubic'
         data-aos-duration='1000'
         className='px-10 w-full h-full lg:px-12 lg:w-1/2'
