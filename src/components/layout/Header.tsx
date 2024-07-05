@@ -16,7 +16,10 @@ export default function Header() {
 
   return (
     <>
-      <header className='fixed z-20 py-4 w-full bg-transparent outline-none'>
+      <header
+        className='fixed z-20 w-full bg-transparent backdrop-blur-sm outline-none'
+        style={{ WebkitBackdropFilter: 'blur(5px)' }}
+      >
         <div className='flex relative justify-between items-center px-6 h-14'>
           <CustomLink
             href='/'

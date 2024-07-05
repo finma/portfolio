@@ -6,7 +6,10 @@ export default function Bottombar() {
   const router = useRouter();
 
   return (
-    <div className='z-[18] flex fixed bottom-0 justify-center w-full h-16 bg-transparent lg:hidden'>
+    <div
+      className='z-[18] flex fixed bottom-0 justify-center w-full h-16 bg-transparent backdrop-blur-sm lg:hidden'
+      style={{ WebkitBackdropFilter: 'blur(5px)' }}
+    >
       <nav className='flex space-x-6 w-min'>
         {links.map(({ href, icon }) => {
           return (
