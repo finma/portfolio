@@ -1,5 +1,8 @@
 import Image from 'next/image';
 
+import ArrowLink from '@/components/links/ArrowLink';
+import ButtonLink from '@/components/links/ButtonLink';
+
 export const Heading = () => {
   return (
     <section className='flex flex-col-reverse flex-wrap justify-around mt-6 w-full h-screen lg:mt-0'>
@@ -36,7 +39,20 @@ export const Heading = () => {
               I love Coding, Technology, <br /> and Learn New Things.
             </h2>
           </div>
-          <div className='w-full'></div>
+          <div
+            data-aos='fade-right'
+            data-aos-easing='easeInOutCubic'
+            data-aos-duration='1000'
+            data-aos-delay='450'
+          >
+            <ArrowLink
+              href='/pdf/cv-firman-maulana.pdf'
+              as={ButtonLink}
+              className='cursor-newtab items-center'
+            >
+              Download CV
+            </ArrowLink>
+          </div>
         </div>
       </div>
       <div className='flex justify-center items-center w-full h-2/3 lg:w-1/2 lg:h-full'>
